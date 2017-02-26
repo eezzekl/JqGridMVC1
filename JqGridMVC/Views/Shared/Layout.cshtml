@@ -1,0 +1,299 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>YUKINDIE - FOR ME, FOR YOU, FOR ALL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout</title>
+    <link rel="shortcut icon" href="~/assets/images/favicon.png" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" href="~/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/assets/images/apple-touch-icon-144-precomposed.png">
+    <!-- For iPad Retina display -->
+    <!-- CORE CSS FRAMEWORK - START -->
+    <!-- css para que salgan submenus el el grou button-->
+    <link href="~/assets/css/multiopcion.css" rel="stylesheet" />
+    <!--    sirve para el cargador e pagina -->
+    <link href="~/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/prettyphoto/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/css/E_Login.css" rel="stylesheet" />
+
+    <!-- CORE CSS FRAMEWORK - END -->
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+
+    <link href="~/assets/plugins/uikit/css/uikit.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/plugins/uikit/css/components/nestable.min.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+    <!--    para fechas-->
+    <link href="~/assets/plugins/jquery-ui/smoothness/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/assets/plugins/timepicker/css/bootstrap-timepicker.css" rel="stylesheet" />
+
+    <!--    para las notificaciones-->
+    <link href="~/assets/plugins/messenger/css/messenger.css" rel="stylesheet" />
+
+    <link href="~/assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" />
+    <link href="~/assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" />
+
+    <!--    para el diseño de los check-->
+    <link href="~/assets/plugins/icheck/skins/all.css" rel="stylesheet" />
+
+    <!--diseño para la parte e crear cuenta-->
+    <link href="~/assets/css/E_CrearCuenta.css" rel="stylesheet" />
+
+    <!-- Fuente del sitio-->
+    <script src="https://use.fontawesome.com/318d9dcb85.js"></script>
+    @RenderSection("css", required: false)
+
+    <script src="~/assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class='page-topbar '>
+        <div class='logo-area'>
+        </div>
+        <div class='quick-area'>
+            <div class='pull-left'>
+                <ul class="info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs searchform">
+                        <form action="ui-search.html" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control animated fadeIn" placeholder="Buscar en YUKINDIE">
+                            </div>
+                            <input type='submit' value="">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class='pull-right'>
+                <ul class="info-menu right-links list-inline list-unstyled">
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b style="color: #fff">Iniciar Sesión</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Mediante
+                                        <div class="social-buttons">
+                                            <a href="#" class="btn btn-fb" style="color: #fff; background-color: #3b5998"><i class="fa fa-facebook"></i>Facebook</a>
+                                            <a href="#" class="btn btn-tw" style="color: #fff; background-color: #55acee"><i class="fa fa-twitter"></i>Twitter</a>
+                                        </div>
+                                        o con tú E-mail
+                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                <div class="help-block text-right"><a href="">¿Olvidó su contraseña?</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-yukindie btn-block">Acceder</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        ¿Nuevo en YUKINDIE? <a href="CuentaCrear.aspx"><b>¡Únete!</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="profile">
+                        <a href="#" data-toggle="dropdown" class="toggle">
+                            <img src="~/Images/Usuario/perfiledwin.jpg" alt="user-image" class="img-circle img-inline" />
+                            <span>Edwin José Gongora Pech <i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu profile animated fadeIn">
+                            <li>
+                                <a href="#settings">
+                                    <i class="fa fa-wrench"></i>
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#profile">
+                                    <i class="fa fa-user"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#help">
+                                    <i class="fa fa-info"></i>
+                                    Help
+                                </a>
+                            </li>
+                            <li class="last">
+                                <a href="ui-login.html">
+                                    <i class="fa fa-lock"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="CuentaCrear.aspx" class="btn btn-default btn-border" style="width: 100%; color: white">Crear Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+
+        <div class="page-sidebar pagescroll" style="height: 100%">
+            <!--Menu estatico -->
+            <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+                <ul class='wraplist'>
+                    <li class='menusection'>YUKINDIE</li>
+                    <li class="">
+                        <a href="Default.aspx">
+                            <i class="fa fa-globe"></i>
+                            <span class="title">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="glyphicon glyphicon-cd"></i>
+                            <span class="title">Música</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="ListadoMusicos.aspx">Bandas</a>
+                            </li>
+                            <li>
+                                <a class="" href="AlbumListado.aspx">Álbumes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="ListadoEventosCartelera.aspx">
+                            <i class="fa fa-calendar"></i>
+                            <span class="title">Eventos</span>
+                        </a>
+                    </li>
+                    <li class='menusection'>Administración</li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-users"></i>
+                            <span class="title">Mis perfiles</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="mail-inbox.html">Inbox</a>
+                            </li>
+                            <li>
+                                <a class="" href="mail-compose.html">Compose</a>
+                            </li>
+                            <li>
+                                <a class="" href="mail-view.html">View</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-cogs"></i>
+                            <span class="title">Gestión de Información</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="javascript:;"><span class="title">Música</span> <span class="arrow "></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="AlbumAdministrador.aspx"><span class="title">Gestión de Álbumes</span> </a></li>
+                                    <li><a href="CancionAdministrador.aspx"><span class="title">Gestión de Canciones</span> </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="" href="GestionListadoPerfil.aspx">Eventos</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- MAIN MENU - END -->
+
+
+
+        </div>
+        <!--  SIDEBAR - END -->
+        <!-- START CONTENT -->
+        <section id="main-content" class="">
+            <section class="wrapper main-wrapper row" style=''>
+                <form id="form1">
+                    <div>
+                        @RenderBody()
+                    </div>
+                </form>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </section>
+        </section>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="~/assets/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--    sirve para el cargador de pagina-->
+    <script src="~/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script>
+    <script src="~/assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="~/assets/js/jquery-1.11.2.min.js"><\/script>');</script>
+    <script src="~/assets/plugins/prettyphoto/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <!-- CORE JS FRAMEWORK - END -->
+    <script src="~/assets/js/multiopcion.js"></script>
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+    <script src="~/assets/plugins/uikit/js/uikit.min.js" type="text/javascript"></script>
+    <script src="~/assets/plugins/uikit/js/components/nestable.min.js" type="text/javascript"></script>
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="~/assets/js/scripts.js" type="text/javascript"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+    <!-- js para compartir en redes sociales-->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-557388c2452ce3f6" async="async"></script>
+
+    <script src="~/assets/plugins/messenger/js/messenger.min.js"></script>
+    <script src="~/assets/plugins/messenger/js/messenger-theme-flat.js"></script>
+    <script src="~/assets/plugins/messenger/js/messenger-theme-future.js"></script>
+    <script src="~/assets/js/messenger.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

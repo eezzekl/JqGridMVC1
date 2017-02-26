@@ -1,0 +1,27 @@
+﻿@section css
+{
+    <link href="~/assets/plugins/jqgrid5.2/css/ui.jqgrid.css" rel="stylesheet" />
+    <link href="~/assets/plugins/jqgrid5.2/css/ui.jqgrid-bootstrap.css" rel="stylesheet" />
+    <link href="~/assets/plugins/jqgrid5.2/css/ui.jqgrid-bootstrap-ui.css" rel="stylesheet" />
+}
+<h2>Listado</h2>
+<div class="content">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <table id="jqGrid">
+        </table>
+        <div id="jqGridPager"></div>
+    </div>
+</div>
+
+@section scripts
+{
+<script src="~/assets/plugins/jqgrid5.2/js/jquery.jqGrid.min.js"></script>
+<script src="~/assets/plugins/jqgrid5.2/js/i18n/grid.locale-es.js"></script>
+<script src="~/assets/Scripts/Index.js"></script>
+    <script>
+        var urlGetData = '@Url.Action("GetAll", "Home")';
+        var Edit = '@Url.Action("Edit", "Home")';
+        var Create = '@Url.Action("Create", "Home")';
+        var Delete = '@Url.Action("Delete", "Home")';
+    </script>
+}

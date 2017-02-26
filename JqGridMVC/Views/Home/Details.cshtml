@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<script>
+    var urlGetData = '@Url.Action("Get", "Home")';
+    var id_param = @ViewBag.id;
+</script>
+<h2 id="titulo">Details</h2>
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-6">
+            <label id="id"></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label id="nombre">Nombre</label>
+            <input id="txtnombre" class="form-control" />
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="~/assets/Scripts/Alumno.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            GetAlumno(id_param);
+        });
+    </script>
+}
